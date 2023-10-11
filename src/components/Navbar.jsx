@@ -5,7 +5,9 @@ import {
   AiOutlineMenu,
   AiOutlineSearch,
 } from "react-icons/ai";
-import { BsFillCartFill, BsFillSaveFill } from "react-icons/bs";
+import { BsFillSaveFill } from "react-icons/bs";
+import { GrCart } from "react-icons/gr";
+
 import { TbTruckDelivery } from "react-icons/tb";
 import { MdFavorite, MdHelp, MdWallet } from "react-icons/md";
 import { FaUserFriends } from "react-icons/fa";
@@ -22,7 +24,7 @@ function Navbar() {
           Delivery<span className="font-bold">Food</span>
         </h1>
         <div className="items-center hidden p-1 rounded-full md:flex bg-slate-200">
-          <p className="px-2 py-1 text-sm rounded-full bg-neutral-900 text-neutral-100">
+          <p className="px-2 py-2 text-sm rounded-full bg-neutral-900 text-neutral-100">
             Delivery
           </p>
           <p className="px-2 py-1">Pickup</p>
@@ -41,8 +43,8 @@ function Navbar() {
       </div>
 
       {/* cart */}
-      <button className="items-center hidden gap-2 px-3 py-2 rounded-full cursor-pointer md:flex bg-neutral-900 text-neutral-100">
-        <BsFillCartFill size={20} />
+      <button className="items-center hidden gap-2 px-3 py-2 rounded-full cursor-pointer md:flex bg-slate-200 text-neutral-900">
+        <GrCart size={20} />
         Cart
       </button>
 
