@@ -21,7 +21,7 @@ function Navbar() {
           <AiOutlineMenu size={30} onClick={() => setNav(!nav)} />
         </div>
         <h1 className="px-2 text-2xl sm:text-3xl">
-          Delivery<span className="font-bold">Food</span>
+          Delivery <span className="font-bold">Food</span>
         </h1>
         <div className="items-center hidden p-1 rounded-full md:flex bg-slate-200">
           <p className="px-2 py-2 text-sm rounded-full bg-neutral-900 text-neutral-100">
@@ -63,7 +63,9 @@ function Navbar() {
           aria-label="Icone de X, para fechar menu"
         />
         <h2>
-          Delivery <span>food</span>
+          <h2 className="px-2 mt-4 text-xl sm:text-3xl">
+            Delivery <span className="font-bold">Food</span>
+          </h2>
           <nav>
             <ul className="flex flex-col gap-4 mt-8 font-semibold">
               <li className="flex gap-2 cursor-pointer">
